@@ -83,9 +83,9 @@ public class EgovSpringSecurityLoginFilter implements Filter{
 		//context-common.xml 빈 설정에 egovUserDetailsSecurityService를 등록 해서 사용해야 정상적으로 동작한다.
 		//if (EgovUserDetailsHelper.getAuthenticatedUser() == null) { security 3.2.4에서는 null이 아니라 anonymousUser로 옮
 		System.out.println(">>>>> EgovUserDetailsHelper=");
-		System.out.println(">>>>> EgovUserDetailsHelper.getAuthenticatedUser()="+EgovUserDetailsHelper.getAuthenticatedUser());
+		//System.out.println(">>>>> EgovUserDetailsHelper.getAuthenticatedUser()="+EgovUserDetailsHelper.getAuthenticatedUser());
 		//System.out.println(">>>>> EgovUserDetailsHelper.isAuthenticated()::::::"+EgovUserDetailsHelper.isAuthenticated());
-		if (EgovUserDetailsHelper.getAuthenticatedUser() == null || requestURL.contains(loginProcessURL)) {
+		if (requestURL.contains(loginURL) || requestURL.contains(loginProcessURL)) {
 			
 			if(isRemotelyAuthenticated != null && isRemotelyAuthenticated.equals("true")){
 				System.out.println(">>>>> isRemotelyAuthenticated is not null");

@@ -91,7 +91,7 @@ ftp 서버가 구동되어 있으면 다음 화면에서 job 배포경로를 지
 		</dependency>
 ```
 
-## 2. jboss-web.xml 추가 (이는 옵션 사항이다.)
+## 2. jboss-web.xml 추가 (옵션 사항임)
 
 /webapp/WEB-INF/jboss-web.xml 파일을 추가하여 빌드한다.
 

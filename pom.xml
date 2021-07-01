@@ -4,13 +4,13 @@
 	<groupId>egovFrameWork_BOPR</groupId>
 	<artifactId>egovFrameWork_BOPR</artifactId>
 	<packaging>war</packaging>
-	<version>3.7.0</version>
+	<version>3.10.0</version>
 	<name>egovFrameWork_BOPR</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<spring.maven.artifact.version>4.2.4.RELEASE</spring.maven.artifact.version>
-		<egovfreamework.rte.version>3.7.0</egovfreamework.rte.version>
+		<spring.maven.artifact.version>4.3.25.RELEASE</spring.maven.artifact.version>
+		<egovfreamework.rte.version>3.10.0</egovfreamework.rte.version>
 	</properties>
 
 	<repositories>

@@ -179,29 +179,54 @@ public class EgovUserDetailsSecurityServiceImpl extends EgovAbstractServiceImpl 
 
 #### 해결 방법
 
-EgovSpringSecurityLoginFilter.java 에서 EgovUserDetailsHelper.getAuthenticatedUser() 에서 null 을 리턴하기 때문으로 requestURL.contains(loginURL) 로 대체한다.
+global.properties 에 Globals.Auth = security 로 설정하면, EgovWebServletContextListener 클래스에서 spring.profiles.active 를 설정해 주는 코드가 JBOSS에서는 작동이 안되고 있는 것으로 보인다.
 
 ```
-		//System.out.println(">>>>> EgovUserDetailsHelper.getAuthenticatedUser()="+EgovUserDetailsHelper.getAuthenticatedUser());
-		//System.out.println(">>>>> EgovUserDetailsHelper.isAuthenticated()::::::"+EgovUserDetailsHelper.isAuthenticated());
-		if (requestURL.contains(loginURL) || requestURL.contains(loginProcessURL)) {
-			
-			if(isRemotelyAuthenticated != null && isRemotelyAuthenticated.equals("true")){
+# global.properties
+Globals.Auth = security
 ```
 
-디버깅하여 BatchBoprMainController 의 selectMainList 메소드에 break point를 걸어보면 EgovUserDetailsHelper.isAuthenticated() 와 EgovUserDetailsHelper.getAuthenticatedUser() 가 null로 리턴된다.
-null 이 되는 원인을 살펴보면 해결할 수 있을 것이다.
+```
+public class EgovWebServletContextListener implements ServletContextListener {
+    private static final Logger LOGGER = LoggerFactory.getLogger(EgovWebServletContextListener.class);
+    
+    public EgovWebServletContextListener(){
+    	setEgovProfileSetting();
+    }
+
+    public void contextInitialized(ServletContextEvent event){
+    	if(System.getProperty("spring.profiles.active") == null){
+    		setEgovProfileSetting();
+    	}
+    }
+
+    public void contextDestroyed(ServletContextEvent event) {
+    	if(System.getProperty("spring.profiles.active") != null){
+    		System.setProperty("spring.profiles.active", null);
+    	}
+    } 
+    
+    public void setEgovProfileSetting(){
+        try {
+            LOGGER.debug("===========================Start EgovServletContextLoad START ===========");
+            System.setProperty("spring.profiles.active", EgovProperties.getProperty("Globals.DbType")+","+EgovProperties.getProperty("Globals.Auth"));
+            LOGGER.debug("Setting spring.profiles.active>"+System.getProperty("spring.profiles.active"));
+            LOGGER.debug("===========================END   EgovServletContextLoad END ===========");
+        //2017.03.03 	조성원 	시큐어코딩(ES)-오류 메시지를 통한 정보노출[CWE-209]
+        } catch(IllegalArgumentException e) {
+    		LOGGER.error("[IllegalArgumentException] Try/Catch...usingParameters Runing : "+ e.getMessage());
+        } catch (Exception e) {
+        	LOGGER.error("[" + e.getClass() +"] search fail : " + e.getMessage());
+        }
+    }
+}
+```
+
+따라서, 대체 방안으로 web.xml에 직접 spring.profiles.active 를 설정한다.
 
 ```
-    @RequestMapping(value = "/main/Main.do")
-    public String selectMainList(@ModelAttribute("mainVO") MainVO mainVOTmp, final HttpServletRequest request, ModelMap model) throws Exception {
-
-    	MainVO mainVO = mainVOTmp;
-    	Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();
-    	if (isAuthenticated) {
-    		LoginVO loginVO = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
-        	
-        	mainVO.setUserId(loginVO.getId());
-    		/** 설정정보 읽어오기 **/
-        	mainVO = mainService.selectSetupInfo(mainVO); 
+    <context-param>
+        <param-name>spring.profiles.active</param-name>
+        <param-value>mysql, security</param-value>
+    </context-param>
 ```

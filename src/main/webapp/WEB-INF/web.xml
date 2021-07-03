@@ -44,7 +44,7 @@
 
     <context-param>
         <param-name>spring.profiles.active</param-name>
-        <param-value>security</param-value>
+        <param-value>mysql, security</param-value>
     </context-param>
 
     <listener>

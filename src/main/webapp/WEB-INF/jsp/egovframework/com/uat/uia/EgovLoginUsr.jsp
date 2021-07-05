@@ -175,10 +175,10 @@ function press() {
 						<li><label for="id" class="disp_none">아이디입력</label><input type="text" name="id" id="id" title="아이디 입력" onkeypress="press();" tabindex="1" autocomplete="off" placeholder="ID" /></li>
 						<li>
 							<label for="pw" class="disp_none">비밀번호입력</label><input type="password" name="password" id="password" title="비밀번호 입력" onkeypress="press();" tabindex="2" autocomplete="off" placeholder="비밀번호" />
-							<div class="btnLogin"><a href="#LINK" onClick="javascript:actionLogin();" tabindex="3"><img src="/images/egovframework/bopr/login/btn_login.jpg"  alt="로그인" /></a></div>
+							<div class="btnLogin"><a href="#LINK" onClick="javascript:actionLogin();" tabindex="3"><img src="<c:url value='/images/egovframework/bopr/login/btn_login.jpg' />"  alt="로그인" /></a></div>
 						</li>
 						<li>
-							<p><a href="#LINK" onClick="javascript:goRegiUsr();" style="margin-right: 10px;" tabindex="4" title="회원가입 화면으로 이동"><img src="/images/egovframework/bopr/login/btn_member_regi.gif" alt="회원가입" title="회원가입" /></a>
+							<p><a href="#LINK" onClick="javascript:goRegiUsr();" style="margin-right: 10px;" tabindex="4" title="회원가입 화면으로 이동"><img src="<c:url value='/images/egovframework/bopr/login/btn_member_regi.gif' />" alt="회원가입" title="회원가입" /></a>
 							<label for="checkId" class="disp_none">ID저장</label>
 							<input class="check" type="checkbox" name="checkId" onClick="javascript:saveid(document.loginForm);" id="checkId" tabindex="5"/>ID저장<p>
 						</li>						
@@ -191,10 +191,10 @@ function press() {
 	<!-- footer -->
 	<div id="footerLogin">
 		<div class="lobFooter">
-			<h2><img src="/images/egovframework/bopr/login/img_mopaslogo.jpg"  alt="안전행정부 로고" /></h2>
-			<address><img src="/images/egovframework/bopr/login/img_copyright_text.jpg"  alt="(우)110-751 서울특별시 종로구 세종로55 정부중앙청사
+			<h2><img src="<c:url value='/images/egovframework/bopr/login/img_mopaslogo.jpg' />"  alt="안전행정부 로고" /></h2>
+			<address><img src="<c:url value='/images/egovframework/bopr/login/img_copyright_text.jpg' />"  alt="(우)110-751 서울특별시 종로구 세종로55 정부중앙청사
 			COPYRIGHT(C)2010 MINISTRY OF REPUBLIC AMINISTRATION AND SECURITY. ALL RIGHT RESERVED" /></address>
-			<div class="monitor"><img src="/images/egovframework/bopr/login/img_monitoring.jpg" alt="egovframe 전자정부 배치운영환경" /></div>
+			<div class="monitor"><img src="<c:url value='/images/egovframework/bopr/login/img_monitoring.jpg' />" alt="egovframe 전자정부 배치운영환경" /></div>
 		</div>
 	</div>
 	<!-- //footer -->

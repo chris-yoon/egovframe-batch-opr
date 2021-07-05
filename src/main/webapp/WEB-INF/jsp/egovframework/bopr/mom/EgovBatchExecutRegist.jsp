@@ -150,14 +150,14 @@
                 </colgroup>
                 <tbody>
                     <tr>
-                        <th colspan="2"><img src="/images/egovframework/bopr/blt4.gif" alt="배치I.D. 필수입력" />배치ID</th>
+                        <th colspan="2"><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="배치I.D. 필수입력" />배치ID</th>
                         <td>
                             <label for="batchId" class="disp_none">배치I.D.</label>
                             <input type="text" id="batchId" name="batchId" size="40" title="배치ID" readonly="readonly">
                         </td>
                     </tr>
                     <tr>
-                        <th colspan="2"><img src="/images/egovframework/bopr/blt4.gif" alt="Job이름(배치명) 필수입력" />Job이름(배치명)</th>
+                        <th colspan="2"><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="Job이름(배치명) 필수입력" />Job이름(배치명)</th>
                         <td>
                             <label for="batchNm" class="disp_none">Job이름(배치명)</label>
                             <input type="text" id="batchNm" name="batchNm" size="40" title="Job이름(배치명)" readonly="readonly">
@@ -171,7 +171,7 @@
                         <th style="text-align:right;">
                             <input type="hidden" name="paramNo" value="<c:out value="${cnt.index}"/>">
                             <input type="hidden" id="paramtrNm<c:out value="${cnt.index}"/>" name="paramtrNm<c:out value="${cnt.index}"/>" value="<c:out value="${list.paramtrNm}"/>">
-                            <img src="/images/egovframework/bopr/blt4.gif" alt="중요표시"><c:out value="${list.paramtrNm}"/>
+                            <img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시"><c:out value="${list.paramtrNm}"/>
                             <script type="text/javaScript" language="javascript">
                             <!--
                                 document.getElementById("paramtrRow").rowSpan = '${cnt.count+1}';

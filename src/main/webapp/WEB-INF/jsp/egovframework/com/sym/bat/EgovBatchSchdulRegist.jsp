@@ -18,8 +18,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
-<c:set var="imgUrl" value="/images/egovframework/com/sym/bat/"/>
-<c:set var="cssUrl" value="/css/egovframework/com/sym/bat/"/>
+<c:set var="imgUrl" value="<c:url value='/images/egovframework/com/sym/bat/' />"/>
+<c:set var="cssUrl" value="<c:url value='/css/egovframework/com/sym/bat/' />"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ko">
 <head>
@@ -345,7 +345,7 @@ function fn_egov_clearExecutSchdulValue(bYyyyMMdd, bMonth, bDay, bDfk, bHHmmss) 
         <input type="hidden" name="cal_url" id="cal_url" value="<c:url value='/com/sym/cal/EgovNormalCalPopup.do'/>" >
         <input name="executSchdulDeNm" id="executSchdulDeNm" type="text" size="10" maxlength="10" title="실행스케줄일자" readonly="readonly">
         <a href="#LINK" onClick="javascript:fn_egov_NormalCalendar( batchSchdul,'',  batchSchdul.executSchdulDeNm ); return false;">
-        <img src="/images/egovframework/com/sym/cal/bu_icon_carlendar.gif"  style="vertical-align: middle; border:0px" alt="달력창팝업버튼이미지">
+        <img src="<c:url value='/images/egovframework/com/sym/cal/bu_icon_carlendar.gif' />"  style="vertical-align: middle; border:0px" alt="달력창팝업버튼이미지">
         </a>
         </span>
         <span id="spnMonth">

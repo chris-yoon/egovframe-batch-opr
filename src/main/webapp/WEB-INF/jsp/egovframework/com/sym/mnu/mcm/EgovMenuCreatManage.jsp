@@ -22,8 +22,8 @@
   */
 
   /* Image Path 설정 */
-  String imagePath_icon   = "/images/egovframework/com/sym/mnu/mcm/icon/";
-  String imagePath_button = "/images/egovframework/com/sym/mnu/mcm/button/";
+  String imagePath_icon   = "<c:url value='/images/egovframework/com/sym/mnu/mcm/icon/' />";
+  String imagePath_button = "<c:url value='/images/egovframework/com/sym/mnu/mcm/button/' />";
 %>
 <html lang="ko">
 <head>

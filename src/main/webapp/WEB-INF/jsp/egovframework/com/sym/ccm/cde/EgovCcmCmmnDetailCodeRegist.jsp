@@ -134,7 +134,7 @@ $(document).ready(function() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드ID</th>
 			<td colspan="3">
 				<label for="clCode" class="disp_none">코드ID</label>
 				<select name="clCode" class="select" onChange="javascript:fn_egov_get_CodeId(document.cmmnDetailCode);" title="clCode">
@@ -153,7 +153,7 @@ $(document).ready(function() {
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드</th>
 			<td>
 				<label for="code" class="disp_none">코드</label>
 				<form:input  path="code" size="15" maxlength="15" id="code"/>
@@ -161,7 +161,7 @@ $(document).ready(function() {
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드명</th>
 			<td>
 				<label for="codeNm" class="disp_none">코드명</label>
 				<form:input  path="codeNm" size="60" maxlength="60" id="codeNm"/>
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드설명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드설명</th>
 			<td>
 				<label for="codeDc" class="disp_none">코드설명</label>
 				<form:textarea path="codeDc" rows="3" cols="60" id="codeDc"/>
@@ -177,7 +177,7 @@ $(document).ready(function() {
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용여부</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용여부</th>
 			<td colspan="3">
 				<label for="useAt" class="disp_none">사용여부</label>
 				<form:select path="useAt" id="useAt">

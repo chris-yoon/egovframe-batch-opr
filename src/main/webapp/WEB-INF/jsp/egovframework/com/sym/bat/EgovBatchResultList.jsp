@@ -20,8 +20,8 @@
  *
  */
 %>
-<c:set var="imgUrl" value="/images/egovframework/com/sym/bat/"/>
-<c:set var="cssUrl" value="/css/egovframework/com/sym/bat/"/>
+<c:set var="imgUrl" value="<c:url value='/images/egovframework/com/sym/bat/' />"/>
+<c:set var="cssUrl" value="<c:url value='/css/egovframework/com/sym/bat/' />"/>
 <%
 //  배치결과의 executBeginTime, executEndTime의 화면 표시용 임시 변수 ....
 %>
@@ -249,12 +249,12 @@ function fn_egov_get_detail_view(batchResultId) {
             <input type="hidden" name="cal_url" id="cal_url" value="<c:url value='/com/sym/cal/EgovNormalCalPopup.do'/>" >
             <input type="text" name="searchStartDate" size="10" title="검색시작일자" >
             <a href="#LINK" onClick="javascript:fn_egov_NormalCalendar( frm,'',  frm.searchStartDate );return false;">
-            <img src="/images/egovframework/com/sym/cal/bu_icon_carlendar.gif"  style="vertical-align: middle; border:0px" alt="달력창팝업버튼이미지">
+            <img src="<c:url value='/images/egovframework/com/sym/cal/bu_icon_carlendar.gif' />"  style="vertical-align: middle; border:0px" alt="달력창팝업버튼이미지">
             </a>
         ~
             <input type="text" name="searchEndDate" size="10" title="검색종료일자">
             <a href="#LINK" onClick="javascript:fn_egov_NormalCalendar( frm, '', frm.searchEndDate );">
-            <img src="/images/egovframework/com/sym/cal/bu_icon_carlendar.gif"  style="vertical-align: middle; border:0px" alt="달력창팝업버튼이미지">
+            <img src="<c:url value='/images/egovframework/com/sym/cal/bu_icon_carlendar.gif' />"  style="vertical-align: middle; border:0px" alt="달력창팝업버튼이미지">
             </a>
         </td>
         <td>

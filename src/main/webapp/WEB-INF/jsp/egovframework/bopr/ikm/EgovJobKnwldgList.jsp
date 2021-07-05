@@ -234,8 +234,8 @@ function fncClearSearchCondition(){
 				<a href="#LINK" onClick="fn_egov_NormalCalendar(listForm,'', listForm.searchKeywordTo);" title="새 창열림">
 				<img name="calendarImg" src="<c:url value='/images/egovframework/com/cmm/icon/bu_icon_carlendar.gif' />"  align="middle" style="border:0px" alt="Job지식 목록 등록일자 검색 종료일">
 	 			</a>                       
-			<input type="image" class="searchbtn" title="검색" src="/images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSearchList(); return false;"/>
-			<input type="image" class="searchbtn" title="초기화" src="/images/egovframework/bopr/btn_refresh.gif" alt="초기화" onclick="javascript:fncClearSearchCondition();return false;" />                       
+			<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSearchList(); return false;"/>
+			<input type="image" class="searchbtn" title="초기화" src="../../../images/egovframework/bopr/btn_refresh.gif" alt="초기화" onclick="javascript:fncClearSearchCondition();return false;" />                       
 			
 		</fieldset>
 	</div>

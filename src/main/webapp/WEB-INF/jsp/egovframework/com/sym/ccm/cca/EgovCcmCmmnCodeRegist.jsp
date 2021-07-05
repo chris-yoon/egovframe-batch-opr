@@ -124,7 +124,7 @@ function fnCheck(str){
 		
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />분류코드</th>          
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />분류코드</th>          
 			<td colspan="3">
 				<label for="clCode" class="disp_none">분류코드</label>
 				<select name="clCode" class="select" id="clCode">
@@ -135,31 +135,31 @@ function fnCheck(str){
 			</td>
 		</tr> 
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드ID</th>          
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드ID</th>          
 			<td colspan="3">
 				<label for="codeId" class="disp_none">코드ID</label>
 			<form:input  path="codeId" size="6" maxlength="6" id="codeId" onchange="document.cmmnCode.codeCheckYn.value=false;"/>
 			<a href="#LINK" onclick="fnCodeCheck();" title="새 창열기">
-					<img src="/images/egovframework/bopr/search.gif" alt="중복 코드 검색" />(중복 코드 검색)
+					<img src="<c:url value='/images/egovframework/bopr/search.gif' />" alt="중복 코드 검색" />(중복 코드 검색)
 				</a>
 			</td>
 		</tr> 
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드명</th>          
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드명</th>          
 			<td>
 				<label for="codeIdNm" class="disp_none">코드명</label>
 				<form:input  path="codeIdNm" size="60" maxlength="60" id="codeIdNm"/>
 			</td>    
 		</tr> 
 		<tr> 
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드설명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드설명</th>
 			<td>
 				<label for="codeIdDc" class="disp_none">코드설명</label>
 				<form:textarea path="codeIdDc" rows="3" cols="60" id="codeIdDc"/>
 			</td>
 		</tr> 
 		<tr> 
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용여부</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용여부</th>
 			<td colspan="3">
 				<label for="useAt" class="disp_none">사용여부</label>
 				<form:select path="useAt" id="useAt">

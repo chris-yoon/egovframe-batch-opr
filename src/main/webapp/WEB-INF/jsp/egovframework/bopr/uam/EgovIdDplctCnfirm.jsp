@@ -124,7 +124,7 @@ function fnCheck(str){
 	    <input type="hidden" name="usedCnt" value="<c:out value="${usedCnt}"/>" />
 	    <label for="checkId" class="disp_none">중복확인할 ID</label>
 		<input type="text" name="checkId" value="<c:out value="${checkId}"/>" maxlength="20" tabindex="1" title="아이디입력"/>                       
-		<input type="image" class="searchbtn" title="검색" src="/images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fnCheckId();"/>
+		<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fnCheckId();"/>
 	</fieldset>
 	</div>
 	

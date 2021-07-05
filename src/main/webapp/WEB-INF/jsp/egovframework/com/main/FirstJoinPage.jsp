@@ -36,7 +36,7 @@
     <td align="center" valign="top"><br >
     <br >
     <br >
-    <table width="600" border="0" cellpadding="0" cellspacing="0" background="/images/egovframework/er_images/blue_bg.jpg">
+    <table width="600" border="0" cellpadding="0" cellspacing="0" background="<c:url value='/images/egovframework/er_images/blue_bg.jpg' />">
       <tr>
         <td align="center"><table width="100%" border="0" cellspacing="9" cellpadding="0">
           <tr>
@@ -63,7 +63,7 @@
                   <br /></td>
               </tr>
               <tr>
-                <td align="center"><a href="<c:url value='/uat/uia/actionLogout.do'/>"><img src="/images/egovframework/bopr/btn_logout.gif" alt="로그아웃" /></a></td>
+                <td align="center"><a href="<c:url value='/uat/uia/actionLogout.do'/>"><img src="<c:url value='/images/egovframework/bopr/btn_logout.gif' />" alt="로그아웃" /></a></td>
               </tr>
             </table>
               <br /></td>

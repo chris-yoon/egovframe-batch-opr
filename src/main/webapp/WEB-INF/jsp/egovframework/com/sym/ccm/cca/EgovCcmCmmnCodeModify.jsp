@@ -90,31 +90,31 @@ function fnCheck(str){
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />분류코드명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />분류코드명</th>
 			<td>${cmmnCode.clCodeNm}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드ID</th>
 			<td colspan="3">
 			 	${cmmnCode.codeId}
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드명</th>
 			<td>
 				<label for="codeIdNm" class="disp_none">코드명</label>
 				<form:input  path="codeIdNm" size="60" maxlength="60" id="codeIdNm"/>
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />코드설명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />코드설명</th>
 			<td>
 				<label for="codeIdDc" class="disp_none">코드설명</label>
 			<form:textarea path="codeIdDc" rows="3" cols="60" id="codeIdDc"/>
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용여부</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용여부</th>
 			<td colspan="3">
 				<label for="useAt" class="disp_none">사용여부</label>
 				<form:select path="useAt" id="useAt">

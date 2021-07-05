@@ -109,13 +109,13 @@ function CheckStrLength() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의번호</th>
 			<td>
 			<label for='jobDlbrtNo' class='disp_none'>업무심의번호</label>
 			<input name="jobDlbrtNo" id="jobDlbrtNo" title="업무심의번호" type="text" readonly value="<c:out value='${jobDlbrt.jobDlbrtNo}'/>" maxLength = "13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의제목</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의제목</th>
 			<td>
 			<label for='jobDlbrtNm' class='disp_none'>업무심의제목</label>
 			<input name="jobDlbrtNm" id="jobDlbrtNm" title="업무심의제목" type="text" readonly value="<c:out value='${jobDlbrt.jobDlbrtNm}'/>"  maxLength="13" size="20" /></td>

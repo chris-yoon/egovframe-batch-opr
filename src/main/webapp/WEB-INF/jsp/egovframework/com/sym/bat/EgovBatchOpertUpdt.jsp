@@ -19,8 +19,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
-<c:set var="imgUrl" value="/images/egovframework/com/sym/bat/"/>
-<c:set var="cssUrl" value="/css/egovframework/com/sym/bat/"/>
+<c:set var="imgUrl" value="<c:url value='/images/egovframework/com/sym/bat/' />"/>
+<c:set var="cssUrl" value="<c:url value='/css/egovframework/com/sym/bat/' />"/>
 <%pageContext.setAttribute("crlf", "\r\n"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ko">

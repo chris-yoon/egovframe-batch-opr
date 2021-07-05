@@ -251,13 +251,13 @@ function fncFileDelete(element, seq)
 		
 		<!-- 기존 테이블 내용 입력 START -->
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />배치심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />배치심의번호</th>
 			<td>
 			<label for='batchDlbrtNo' class='disp_none'>배치심의번호</label>
 			<input name="batchDlbrtNo" id="batchDlbrtNo" title="배치심의번호" type="text" readonly value="<c:out value='${batchDlbrt.batchDlbrtNo}'/>" maxLength = "13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의번호</th>
 			<td>
 			<label for='jobDlbrtNo' class='disp_none'>업무심의번호</label>
 			<input name="jobDlbrtNo" id="jobDlbrtNo" title="업무심의번호" type="text" value="<c:out value='${batchDlbrt.jobDlbrtNo}'/>"  maxLength="13" size="20" readonly="readonly"/></td>
@@ -269,7 +269,7 @@ function fncFileDelete(element, seq)
 			<input name="jobDlbrtNm" id="jobDlbrtNm" title="업무심의명" type="text" readonly value="<c:out value='${batchDlbrt.jobDlbrtNm}'/>"  maxLength="13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />배치ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />배치ID</th>
 			<td>
 			<label for='batchId' class='disp_none'>배치ID</label>
 			<input name="batchId" id="batchId" title="배치ID" type="text" readonly value="<c:out value='${batchDlbrt.batchId}'/>"  maxLength="13" size="50" /></td>
@@ -365,7 +365,7 @@ function fncFileDelete(element, seq)
 		</c:forEach>
 		<tr>
            <th>첨부파일 &nbsp;
-             <img src="/images/egovframework/bopr/search.gif" title="설정 XML 파일 이외의 배치 관련 파일을 등록합니다.
+             <img src="<c:url value='/images/egovframework/bopr/search.gif' />" title="설정 XML 파일 이외의 배치 관련 파일을 등록합니다.
 class 파일, 파라미터 파일 등 형식에 구애 받지 않고 등록할 수 있습니다.
 배포 경로는 공통(사용자관리)>연동서비스관리>FTP연동서비스관리에서 변경할 수 있습니다.
 파일은 배포경로/상세경로의 위치에 배포됩니다.

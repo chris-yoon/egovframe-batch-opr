@@ -123,12 +123,12 @@ function fnCheck(str){
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />권한코드</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />권한코드</th>
 			<td><c:out value='${authorManage.authorCode}'/><input name="authorCode" id="authorCode" type="hidden" value="<c:out value='${authorManage.authorCode}'/>"/></td>		
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />권한명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />권한명</th>
 			<td>
 				<label for="authorNm" class="disp_none">권한명</label>
 				<input name="authorNm" id="authorNm" type="text" value="<c:out value='${authorManage.authorNm}'/>" maxLength="40" size="40" title="권한명" /></td>

@@ -78,13 +78,13 @@ function CheckStrLength() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />Job 인스턴스ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />Job 인스턴스ID</th>
 			<td>
 			<label for="jobInstanceId" class="disp_none">Job 인스턴스ID</label>
 			<input name="jobInstanceId" id="jobInstanceId" title="Job 인스턴스ID" type="text" readonly value="<c:out value='${rehndn.jobInstanceId}'/>" maxLength = "13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />Job 실행ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />Job 실행ID</th>
 			<td>
 			<label for="jobExecutionId" class="disp_none">Job 실행ID</label>
 			<input name="jobExecutionId" id="jobExecutionId" title="Job 실행ID" type="text" readonly value="<c:out value='${rehndn.jobExecutionId}'/>"  maxLength="13" size="20" /></td>
@@ -96,7 +96,7 @@ function CheckStrLength() {
 			<textarea name="rehndnResn" id="rehndnResn" title="재처리사유" rows="5" cols="80"><c:out value="${rehndn.rehndnResn}"/></textarea></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />배치ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />배치ID</th>
 			<td>
 			<label for="batchId" class="disp_none">배치ID</label>
 			<input name="batchId" id="batchId" title="배치ID" type="text" readonly value="<c:out value='${rehndn.batchId}'/>"  maxLength="13" size="20" /></td>

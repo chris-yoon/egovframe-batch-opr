@@ -16,8 +16,8 @@
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<c:set var="imgUrl" value="/images/egovframework/com/sym/bat/"/>
-<c:set var="cssUrl" value="/css/egovframework/com/sym/bat/"/>
+<c:set var="imgUrl" value="<c:url value='/images/egovframework/com/sym/bat/' />"/>
+<c:set var="cssUrl" value="<c:url value='/css/egovframework/com/sym/bat/' />"/>
 <%pageContext.setAttribute("crlf", "\r\n"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ko">

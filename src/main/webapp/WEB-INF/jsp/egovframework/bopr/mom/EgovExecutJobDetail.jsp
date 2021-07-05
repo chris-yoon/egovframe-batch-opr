@@ -83,13 +83,13 @@ function fncExecutJobDelete() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />Job 실행 ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />Job 실행 ID</th>
 			<td>
 			<label for="jobExecutionId" class="disp_none">Job 실행 ID</label>
 			<input name="jobExecutionId" id="jobExecutionId" title="Job 실행 ID" type="text" readonly value="<c:out value='${executJob.jobExecutionId}'/>" maxLength = "13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />Job 인스턴스 ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />Job 인스턴스 ID</th>
 			<td>
 			<label for="jobInstanceId" class="disp_none">Job 인스턴스 ID</label>
 			<input name="jobInstanceId" id="jobInstanceId" title="Job 인스턴스 ID" type="text" readonly value="<c:out value='${executJob.jobInstanceId}'/>"  maxLength="13" size="20" />

@@ -173,7 +173,7 @@ function fn_egov_select_commentList(pageNo) {
 		<tbody>
 			<tr>
 				<th>
-					<img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />작성자
+					<img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />작성자
 				</th>
 				
 				<td>
@@ -184,7 +184,7 @@ function fn_egov_select_commentList(pageNo) {
 			
 			<tr>
 				<th>
-					<img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />평가점수
+					<img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />평가점수
 				</th>
 				
 				<td>
@@ -201,7 +201,7 @@ function fn_egov_select_commentList(pageNo) {
 			
 			<tr>
 				<th>
-					<img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />내용
+					<img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />내용
 				</th>
 				
 				<td>

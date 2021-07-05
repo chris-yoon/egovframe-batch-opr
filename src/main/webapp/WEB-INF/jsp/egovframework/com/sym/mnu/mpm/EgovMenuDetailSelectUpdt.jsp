@@ -25,7 +25,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
-<c:set var="ImgUrl" value="/images/egovframework/com/sym/mnu/mpm/"/>
+<c:set var="ImgUrl" value="<c:url value='/images/egovframework/com/sym/mnu/mpm/' />"/>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <link rel="stylesheet" href="<c:url value='/css/egovframework/com/cmm/com.css' />" type="text/css" >

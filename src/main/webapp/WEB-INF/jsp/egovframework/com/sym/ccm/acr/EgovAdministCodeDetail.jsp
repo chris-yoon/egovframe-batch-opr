@@ -51,7 +51,7 @@ function fn_egov_list_AdministCode(){
 <table width="700" cellpadding="8" class="table-search" border="0">
  <tr>
   <td width="100%" class="title_left">
-   <img src="/images/egovframework/com/sym/ccm/acr/icon/tit_icon.gif" width="16" height="16" hspace="3" style="vertical-align: middle" alt="제목아이콘이미지">&nbsp;법정동코드 상세조회</td>
+   <img src="<c:url value='/images/egovframework/com/sym/ccm/acr/icon/tit_icon.gif' />" width="16" height="16" hspace="3" style="vertical-align: middle" alt="제목아이콘이미지">&nbsp;법정동코드 상세조회</td>
  </tr>
 </table>
 <table width="700" border="0" cellpadding="0" cellspacing="1" class="table-register">
@@ -64,19 +64,19 @@ function fn_egov_list_AdministCode(){
 </c:if>
 <c:if test="${result.administZoneCode != null}">
   <tr>
-    <th width="30%" height="23" class="required_text" nowrap >법정동코드<img src="/images/egovframework/com/sym/ccm/acr/icon/required.gif" alt="필수입력표시"  width="15" height="15"></th>
+    <th width="30%" height="23" class="required_text" nowrap >법정동코드<img src="<c:url value='/images/egovframework/com/sym/ccm/acr/icon/required.gif' />" alt="필수입력표시"  width="15" height="15"></th>
     <td><c:out value="${result.administZoneCode}"/></td>
   </tr>
   <tr>
-    <th width="30%" height="23" class="required_text" nowrap >행정구역명<img src="/images/egovframework/com/sym/ccm/acr/icon/required.gif" alt="필수입력표시"  width="15" height="15"></th>
+    <th width="30%" height="23" class="required_text" nowrap >행정구역명<img src="<c:url value='/images/egovframework/com/sym/ccm/acr/icon/required.gif' />" alt="필수입력표시"  width="15" height="15"></th>
     <td><c:out value="${result.administZoneNm}"/></td>
   </tr>
   <tr>
-    <th width="20%" height="23" class="required_text" nowrap >생성일자<img src="/images/egovframework/com/sym/ccm/acr/icon/required.gif" alt="필수입력표시"  width="15" height="15"></th>
+    <th width="20%" height="23" class="required_text" nowrap >생성일자<img src="<c:url value='/images/egovframework/com/sym/ccm/acr/icon/required.gif' />" alt="필수입력표시"  width="15" height="15"></th>
     <td><c:out value='${fn:substring(result.creatDe, 0,4)}'/>-<c:out value='${fn:substring(result.creatDe, 4,6)}'/>-<c:out value='${fn:substring(result.creatDe, 6,8)}'/></td>
   </tr>
   <tr>
-    <th width="20%" height="23" class="required_text" nowrap >폐지유무<img src="/images/egovframework/com/ssi/syi/sim/icon/required.gif" alt="필수입력표시"  width="15" height="15"></th>
+    <th width="20%" height="23" class="required_text" nowrap >폐지유무<img src="<c:url value='/images/egovframework/com/ssi/syi/sim/icon/required.gif' />" alt="필수입력표시"  width="15" height="15"></th>
     <td width="80%" nowrap>
 	  <select title="폐지유무" name="ablEnnc" disabled="disabled">
 	      <option value="0" <c:if test="${result.ablEnnc == '0'}">selected="selected"</c:if> >사용</option>

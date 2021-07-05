@@ -64,22 +64,22 @@ function fnReturnDay(day){
 <div class="calendar_wrap">
 
 	<!-- title start -->
-	<div><img src="/images/egovframework/com/cal/img_title.gif" alt="CALENDAR" title="CALENDAR" /></div>
+	<div><img src="<c:url value='/images/egovframework/com/cal/img_title.gif' />" alt="CALENDAR" title="CALENDAR" /></div>
 	<!-- title end -->
 
 	<!-- year start -->
 	<div class="year">
-		<a href="javascript:fnChangeCalendar(${resultList[0].year-1}  ,${resultList[0].month});"><img src="/images/egovframework/com/cal/btn_pre_month.png" alt="이전연도" title="이전연도" /></a>
+		<a href="javascript:fnChangeCalendar(${resultList[0].year-1}  ,${resultList[0].month});"><img src="<c:url value='/images/egovframework/com/cal/btn_pre_month.png' />" alt="이전연도" title="이전연도" /></a>
 		&nbsp;&nbsp; ${resultList[0].year} &nbsp;&nbsp;
-		<a href="javascript:fnChangeCalendar(${resultList[0].year+1}  ,${resultList[0].month});"><img src="/images/egovframework/com/cal/btn_next_month.png" alt="다음연도"title="다음연도" /></a>
+		<a href="javascript:fnChangeCalendar(${resultList[0].year+1}  ,${resultList[0].month});"><img src="<c:url value='/images/egovframework/com/cal/btn_next_month.png' />" alt="다음연도"title="다음연도" /></a>
 	</div>
 	<!-- year end -->
 	
 	<!-- day start -->
 	<div class="day">
-		<div class="pre"><a href="javascript:fnChangeCalendar(${resultList[0].year}  ,${resultList[0].month-1});"><img src="/images/egovframework/com/cal/btn_pre.gif" alt="이전달" title="이전달" /></a></div>
-		<div class="day_num"><img src="/images/egovframework/com/cal/img_month${resultList[0].month}.gif" alt="${resultList[0].month}월" /></div>
-		<div class="next"><a href="javascript:fnChangeCalendar(${resultList[0].year}  ,${resultList[0].month+1});"><img src="/images/egovframework/com/cal/btn_next.gif" alt="다음달" title="다음달" /></a></div>
+		<div class="pre"><a href="javascript:fnChangeCalendar(${resultList[0].year}  ,${resultList[0].month-1});"><img src="<c:url value='/images/egovframework/com/cal/btn_pre.gif' />" alt="이전달" title="이전달" /></a></div>
+		<div class="day_num"><img src="<c:url value='/images/egovframework/com/cal/img_month${resultList[0].month}.gif' />" alt="${resultList[0].month}월" /></div>
+		<div class="next"><a href="javascript:fnChangeCalendar(${resultList[0].year}  ,${resultList[0].month+1});"><img src="<c:url value='/images/egovframework/com/cal/btn_next.gif' />" alt="다음달" title="다음달" /></a></div>
 	</div>
 	<!-- day end -->
 	
@@ -96,13 +96,13 @@ function fnReturnDay(day){
 			<col width="40">
 			</colgroup>
 		  <tr>
-			<th height="27"><img src="/images/egovframework/com/cal/text_day01.gif" alt="일요일" /></th>
-			<th><img src="/images/egovframework/com/cal/text_day02.gif" alt="월요일" /></th>
-			<th><img src="/images/egovframework/com/cal/text_day03.gif" alt="화요일" /></th>
-			<th><img src="/images/egovframework/com/cal/text_day04.gif" alt="수요일" /></th>
-			<th><img src="/images/egovframework/com/cal/text_day05.gif" alt="목요일" /></th>
-			<th><img src="/images/egovframework/com/cal/text_day06.gif" alt="금요일" /></th>
-			<th><img src="/images/egovframework/com/cal/text_day07.gif" alt="토요일" /></th>
+			<th height="27"><img src="<c:url value='/images/egovframework/com/cal/text_day01.gif' />" alt="일요일" /></th>
+			<th><img src="<c:url value='/images/egovframework/com/cal/text_day02.gif' />" alt="월요일" /></th>
+			<th><img src="<c:url value='/images/egovframework/com/cal/text_day03.gif' />" alt="화요일" /></th>
+			<th><img src="<c:url value='/images/egovframework/com/cal/text_day04.gif' />" alt="수요일" /></th>
+			<th><img src="<c:url value='/images/egovframework/com/cal/text_day05.gif' />" alt="목요일" /></th>
+			<th><img src="<c:url value='/images/egovframework/com/cal/text_day06.gif' />" alt="금요일" /></th>
+			<th><img src="<c:url value='/images/egovframework/com/cal/text_day07.gif' />" alt="토요일" /></th>
 		  </tr>
 		  <tr>
 			<c:forEach var="result" items="${resultList}" varStatus="status">

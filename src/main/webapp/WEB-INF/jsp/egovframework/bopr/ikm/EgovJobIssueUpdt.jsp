@@ -116,7 +116,7 @@ $(document).ready(function() {
 		</colgroup>
 		<tbody>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈유형</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />이슈유형</th>
 			<td>
 				<label for="issueTyCode" class="disp_none">이슈유형</label>
 				<form:select path="issueTyCode"  title="이슈유형">
@@ -124,7 +124,7 @@ $(document).ready(function() {
 				</form:select> 
 			</td>
 		
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈수준</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />이슈수준</th>
 			<td>
 				<label for="issueLvCode" class="disp_none">이슈수준</label>
 				<form:select path="issueLvCode"  title="이슈수준">
@@ -132,7 +132,7 @@ $(document).ready(function() {
 				</form:select> 
 			</td>
 			
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈상태</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />이슈상태</th>
 			<td>
 			<c:choose>
 				<c:when test="${adminYn == 'Y'}">
@@ -183,14 +183,14 @@ $(document).ready(function() {
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈제목</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈제목</th>
 			<td colspan="5">
 				<label for="issueSj" class="disp_none">이슈제목</label>
 				<input name="issueSj" id="issueSj" type="text" value="<c:out value='${jobIssueManage.issueSj}'/>" maxLength="50" size="40" /></td>
 		</tr>
 	
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈내용</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif" alt="필수입력" />이슈내용</th>
 			<td colspan="5">
 				<label for="issueCn" class="disp_none">이슈내용</label>
 				<textarea name="issueCn" id="issueCn" style="width: 80%;" rows="10" cols="100"><c:out value='${jobIssueManage.issueCn}'/></textarea></td>

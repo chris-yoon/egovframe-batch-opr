@@ -176,13 +176,13 @@ $(document).ready(function() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의번호</th>
 			<td>
 			<label for="jobDlbrtNo" class="disp_none">업무심의번호</label>
 			<input name="jobDlbrtNo" id="jobDlbrtNo" title="업무심의번호" type="text" readonly value="<c:out value='${jobDlbrt.jobDlbrtNo}'/>" maxLength = "8" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무구분</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무구분</th>
 			<td>
 			<label for="jobSeCode" class="disp_none">업무 구분 선택</label>
 			<select name="jobSeCode" id="jobSeCode" title="업무 구분 선택" <c:if test="${updaterFlag == 'DISABLE'}">disabled="disabled"</c:if>>
@@ -193,7 +193,7 @@ $(document).ready(function() {
      		</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의제목</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의제목</th>
 			<td>
 			<label for="jobDlbrtNm" class="disp_none">업무심의제목</label>
 			<input name="jobDlbrtNm" id="jobDlbrtNm" title="업무심의제목" type="text" value="<c:out value='${jobDlbrt.jobDlbrtNm}'/>" <c:if test="${updaterFlag == 'DISABLE'}">readonly="readonly"</c:if> maxLength="50" size="50" /></td>

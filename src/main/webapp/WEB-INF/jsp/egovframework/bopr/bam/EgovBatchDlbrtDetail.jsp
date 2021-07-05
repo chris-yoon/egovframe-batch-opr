@@ -176,13 +176,13 @@ $(document).ready(function() {
 		
 		<!-- 기존 테이블 내용 입력 START -->
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />배치심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />배치심의번호</th>
 			<td>
 			<label for="batchDlbrtNo" class="disp_none">배치심의번호</label>
 			<input name="batchDlbrtNo" id="batchDlbrtNo" title="배치심의번호" type="text" readonly value="<c:out value='${batchDlbrt.batchDlbrtNo}'/>" maxLength = "13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의번호</th>
 			<td>
 			<label for="jobDlbrtNo" class="disp_none">업무심의번호</label>
 			<input name="jobDlbrtNo" id="jobDlbrtNo" title="업무심의번호" type="text" value="<c:out value='${batchDlbrt.jobDlbrtNo}'/>"  maxLength="13" size="20" readonly="readonly"/></td>
@@ -194,7 +194,7 @@ $(document).ready(function() {
 			<input name="jobDlbrtNm" id="jobDlbrtNm" title="업무심의명" type="text" readonly value="<c:out value='${batchDlbrt.jobDlbrtNm}'/>"  maxLength="13" size="20" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />배치ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />배치ID</th>
 			<td>
 			<label for="batchId" class="disp_none">배치ID</label>
 			<input name="batchId" id="batchId" title="배치ID" type="text" readonly value="<c:out value='${batchDlbrt.batchId}'/>"  maxLength="13" size="50" /></td>

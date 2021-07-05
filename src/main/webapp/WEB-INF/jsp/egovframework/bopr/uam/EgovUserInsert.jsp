@@ -155,38 +155,38 @@ $(document).ready(function() {
 		</colgroup>
 		<tbody>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자ID</th>
 			<td>
 				<label for="userId" class="disp_none">사용자ID</label>
 				<input name="userId" id="userId" type="text" value="" size="25" maxlength="20" readonly="readonly"/>
 				<a href="#LINK" onclick="fnIdCheck();" title="새 창열림">
-					<img src="/images/egovframework/bopr/search.gif" alt="중복아이디 검색" />(중복아이디 검색)
+					<img src="<c:url value='/images/egovframework/bopr/search.gif' />" alt="중복아이디 검색" />(중복아이디 검색)
 				</a>
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자명</th>
 			<td>
 				<label for="userNm" class="disp_none">사용자명</label>
 				<input name="userNm" id="userNm" type="text" value="" size="25" maxlength="20"/>
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />비밀번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />비밀번호</th>
 			<td>
 				<label for="password" class="disp_none">비밀번호</label>
 				<input name="password" id="password" type="password" value="" size="15" maxlength="12"/>
 			</td>
 		</tr>
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />비밀번호 확인</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />비밀번호 확인</th>
 			<td>
 				<label for="password2" class="disp_none">비밀번호 확인</label>
 				<input name="password2" id="password2" type="password" value="" size="15" maxlength="12"/>
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />소속부서</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />소속부서</th>
 			<td>
 				<label for="deptId" class="disp_none">소속부서</label>
 				<form:select path="deptId"  title="소속부서" >
@@ -196,7 +196,7 @@ $(document).ready(function() {
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />전화번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />전화번호</th>
 			<td>
 				<label for="moblphonNo" class="disp_none">전화번호</label>
 				<input name="moblphonNo" id="moblphonNo" type="text" value="" alt="sdfg" maxLength="20" size="20"/>
@@ -211,7 +211,7 @@ $(document).ready(function() {
 		</tr>
 
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />E-mail</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />E-mail</th>
 			<td>
 				<label for="emails" class="disp_none">E-mail</label>
 				<input name="emails" id="emails" type="text" value="" maxLength="25" size="25"/>

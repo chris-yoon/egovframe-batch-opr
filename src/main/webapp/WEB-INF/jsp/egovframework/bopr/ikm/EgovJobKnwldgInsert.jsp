@@ -137,7 +137,7 @@ $(document).ready(function() {
 		<tbody>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />공개여부</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />공개여부</th>
 			<td colspan="5">
 				<label for="othbcAt" class="disp_none">공개여부</label>
 				<form:select path="othbcAt"  title="공개여부">
@@ -148,7 +148,7 @@ $(document).ready(function() {
 		</tr>
 		 
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />지식유형</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />지식유형</th>
 			<td>
 				<label for="knwldgTyCode" class="disp_none">지식유형</label>
 				<form:select path="knwldgTyCode"  title="소속부서">
@@ -166,7 +166,7 @@ $(document).ready(function() {
 				</form:select>
 			</td>
 			
-			<th><img id="calendarImg" style="visibility: hidden;" src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />폐기일</th>
+			<th><img id="calendarImg" style="visibility: hidden;" src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />폐기일</th>
 			<td>
 				<label for="dsuseDe" class="disp_none">폐기유무</label>
 				<input name="dsuseDe" type="text" title="수집일달력" size="10" value="${jobKnwldgManage.dsuseDe}"  disabled="disabled"/>
@@ -178,14 +178,14 @@ $(document).ready(function() {
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />지식명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />지식명</th>
 		<td colspan="5">
 			<label for="knwldgNm" class="disp_none">지식명</label>
 			<input name="knwldgNm" id="knwldgNm" type="text" value="<c:out value='${jobKnwldgManage.knwldgNm}'/>" maxLength="50" size="40" /></td>
 		</tr>
 		 
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />지식내용</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />지식내용</th>
 			<td colspan="5">
 				<label for="knwldgCn" class="disp_none">지식내용</label>
 				<textarea name="knwldgCn" id="knwldgCn" style="width: 80%;" rows="10" cols="100"><c:out value='${jobKnwldgManage.knwldgCn}'/></textarea></td>

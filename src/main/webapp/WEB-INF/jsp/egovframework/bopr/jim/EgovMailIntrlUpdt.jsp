@@ -82,27 +82,27 @@ function fncMailIntrlDelete() {
 		<tbody>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />이메일연동명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />이메일연동명</th>
 			<td><input name="emailIntrlckNm" id="emailIntrlckNm" type="text" value="<c:out value='${mailIntrlManage.emailIntrlckNm}'/>" maxLength="50" size="40" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />이메일주소</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />이메일주소</th>
 			<td><input name="emailAdres" id="emailAdres" type="text" value="<c:out value='${mailIntrlManage.emailAdres}'/>"maxLength="50" size="40" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />IP정보</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />IP정보</th>
 			<td nowrap><input name="ipInfo" id="ipInfo" type="text" value="<c:out value='${mailIntrlManage.ipInfo}'/>" maxLength="50" size="40" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />사용자ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />사용자ID</th>
 			<td><input name="userId" id="userId" type="text" value="<c:out value='${mailIntrlManage.userId}'/>" maxLength="50" size="40" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />비밀번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />비밀번호</th>
 			<td><input name="password" id="password" type="text" value="<c:out value='${mailIntrlManage.password}'/>" maxLength="50" size="40" /></td>
 		</tr>
 		

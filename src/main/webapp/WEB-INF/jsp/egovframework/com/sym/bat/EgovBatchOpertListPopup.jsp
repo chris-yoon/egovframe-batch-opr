@@ -19,8 +19,8 @@
  *  
  */
 %>
-<c:set var="imgUrl" value="/images/egovframework/com/sym/bat/"/>
-<c:set var="cssUrl" value="/css/egovframework/com/sym/bat/"/>
+<c:set var="imgUrl" value="<c:url value='/images/egovframework/com/sym/bat/' />"/>
+<c:set var="cssUrl" value="<c:url value='/css/egovframework/com/sym/bat/' />"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ko">
 <head>

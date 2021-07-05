@@ -197,7 +197,7 @@ function fncSearchList(){
 				<c:if test="${authorRoleManageVO.searchKeyword ne ''}">value="<c:out value='${authorRoleManageVO.searchKeyword}'/>"</c:if>
 				<c:if test="${authorRoleManageVO.searchKeyword eq ''}">value="검색조건을 선택하세요" disabled="disabled"</c:if>
 			/>
-			<input type="image" class="searchbtn" title="검색" src="/images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSearchList(); return false;"/>
+			<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSearchList(); return false;"/>
 			<a href="javascript:fncSelectAuthorList()" title="권한목록 팝업">권한목록</a>
 		</fieldset>
 	</div>

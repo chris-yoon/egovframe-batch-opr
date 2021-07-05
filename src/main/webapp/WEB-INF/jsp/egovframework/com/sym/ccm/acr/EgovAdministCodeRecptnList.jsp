@@ -71,7 +71,7 @@ function fn_egov_detail_AdministCodeRecptn(administZoneSe,administZoneCode){
  <tr>
   <td width="40%"class="title_left">
 
-   <img src="/images/egovframework/com/sym/ccm/acr/icon/tit_icon.gif" width="16" height="16" hspace="3" style="vertical-align: middle" alt="제목아이콘이미지">&nbsp;법정동코드수신 목록</td>
+   <img src="<c:url value='/images/egovframework/com/sym/ccm/acr/icon/tit_icon.gif' />" width="16" height="16" hspace="3" style="vertical-align: middle" alt="제목아이콘이미지">&nbsp;법정동코드수신 목록</td>
   <th>
   </th>
   <td width="10%">
@@ -86,10 +86,10 @@ function fn_egov_detail_AdministCodeRecptn(administZoneSe,administZoneCode){
   <th width="10%">
    <table border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td><img src="/images/egovframework/com/sym/ccm/acr/button/bu2_left.gif" alt="조회" width="8" height="20"></td>
+      <td><img src="<c:url value='/images/egovframework/com/sym/ccm/acr/button/bu2_left.gif' />" alt="조회" width="8" height="20"></td>
       <td style="background-image:URL(<c:url value='/images/egovframework/com/cmm/btn/bu2_left.gif' />);" class="text_left" nowrap>
       <input type="submit" value="조회" onclick="fn_egov_search_AdministCodeRecptn(); return false;" class="btnNew" style="height:20px;width:26px;" ></td>
-      <td><img src="/images/egovframework/com/sym/ccm/acr/button/bu2_right.gif" alt="조회" width="8" height="20"></td>
+      <td><img src="<c:url value='/images/egovframework/com/sym/ccm/acr/button/bu2_right.gif' />" alt="조회" width="8" height="20"></td>
     </tr>
    </table>
   </th>

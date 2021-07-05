@@ -104,17 +104,17 @@ function fncRoleDelete() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />롤  코드</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />롤  코드</th>
 			<td>${roleManage.roleCode}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />롤 명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />롤 명</th>
 			<td>
 				<label for="roleNm" class="disp_none">롤 명</label>
 				<input name="roleNm" id="roleNm" type="text" value="<c:out value='${roleManage.roleNm}'/>" maxLength="50" size="30" title="롤명" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />롤 패턴</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />롤 패턴</th>
 			<td>
 				<label for="rolePtn" class="disp_none">롤 패턴</label>
 				<input name="rolePtn" id="rolePtn" type="text" value="<c:out value='${roleManage.rolePtn}'/>" maxLength="200" size="50" title="롤패턴" /></td>
@@ -126,7 +126,7 @@ function fncRoleDelete() {
 				<input name="roleDc" id="roleDc" type="text" value="<c:out value='${roleManage.roleDc}'/>" maxLength="50" size="50" title="설명" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />롤 타입</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />롤 타입</th>
 			<td>
 				<label for="roleTyp" class="disp_none">롤 타입</label>
 				<select name="roleTyp" title="롤타입">
@@ -137,7 +137,7 @@ function fncRoleDelete() {
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />롤인증순서</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />롤인증순서</th>
 			<td>
 				<label for="roleSort" class="disp_none">롤인증순서</label>
 				<input name="roleSort" id="roleSort" type="text" value="<c:out value='${roleManage.roleSort}'/>" maxLength="10" size="10" title="롤인증순서" /></td>

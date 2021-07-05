@@ -93,29 +93,29 @@ alert("${message}");
 		</colgroup>
 		<tbody>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자ID</th>
 			<td>${userManage.userId}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자명</th>
 			<td>${userManage.userNm}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />기존비밀번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />기존비밀번호</th>
 			<td>
 				<label for="searchKeyword" class="disp_none">기존비밀번호</label>
 				<input name="searchKeyword" id="searchKeyword" type="password" value="" size="15" maxlength="12"/>
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />새비밀번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />새비밀번호</th>
 			<td>
 				<label for="password" class="disp_none">새비밀번호</label>
 				<input name="password" id="password" type="password" value="" size="15" maxlength="12"/>
 			</td>
 		</tr>
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />비밀번호 확인</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />비밀번호 확인</th>
 			<td>
 				<label for="password2" class="disp_none">비밀번호 확인</label>
 				<input name="password2" id="password2" type="password" value="" size="15" maxlength="12"/>

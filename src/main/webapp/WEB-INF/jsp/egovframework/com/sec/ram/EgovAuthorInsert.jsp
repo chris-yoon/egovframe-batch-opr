@@ -142,18 +142,18 @@ function fnCheck(str){
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />권한코드</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />권한코드</th>
 			<td>
 				<label for="authorCode" class="disp_none">권한코드</label>
 				<input name="authorCode" id="authorCode" type="text" value="<c:out value='${authorManage.authorCode}'/>" maxLength="25" size="25" title="권한코드" readonly="readonly" />
 				<a href="#LINK" onclick="fnCodeCheck();" title="새 창열기">
-					<img src="/images/egovframework/bopr/search.gif" alt="중복 권한코드 검색" />(중복 권한코드 검색)
+					<img src="<c:url value='/images/egovframework/bopr/search.gif' />" alt="중복 권한코드 검색" />(중복 권한코드 검색)
 				</a>
 			</td>		
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />권한명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />권한명</th>
 			<td>
 				<label for="authorNm" class="disp_none">권한명</label>
 				<input name="authorNm" id="authorNm" type="text" value="<c:out value='${authorManage.authorNm}'/>" maxLength="40" size="40" title="권한명" /></td>

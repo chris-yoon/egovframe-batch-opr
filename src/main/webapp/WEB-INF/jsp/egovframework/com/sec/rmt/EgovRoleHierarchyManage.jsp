@@ -140,7 +140,7 @@ function press() {
 		<tbody>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />상위 롤</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />상위 롤</th>
 			<td>
 				<label for="childRole" class="disp_none">상위롤</label>
 				<select id="childRole" name="childRole" style="width:200px; white-space:nowrap;  border:1px solid #d3d3d3; vertical-align:top; height:20px;" title="상위롤 선택">
@@ -155,7 +155,7 @@ function press() {
 			
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />하위 롤</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />하위 롤</th>
 			<td>
 				<label for="parentRole" class="disp_none">하위롤</label>
 				<select id="parentRole" name="parentRole" style="width:200px; white-space:nowrap;  border:1px solid #d3d3d3; vertical-align:top; height:20px;" title="하위롤 선택">

@@ -85,21 +85,21 @@ function fncUserDelete() {
 				</c:import>       
 			</c:if>
 			<c:if test="${empty userManage.imageFile}">
-				<img src="/images/egovframework/bopr/noImage.png" alt="사용자정보 해당 이미지가 없습니다."/>
+				<img src="<c:url value='/images/egovframework/bopr/noImage.png' />" alt="사용자정보 해당 이미지가 없습니다."/>
 			</c:if>
 			
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자ID</th>
 			<td>${userManage.userId}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자명</th>
 			<td>${userManage.userNm}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용여부</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용여부</th>
 			<td>
 				<c:if test="${userManage.useAt == 'Y'}">사용가능</c:if>
     			<c:if test="${userManage.useAt == 'N'}">사용불가</c:if>

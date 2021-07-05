@@ -226,19 +226,19 @@ $(document).ready(function() {
 		<tbody>
 		<!-- 
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />배치심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />배치심의번호</th>
 			<td><input name="batchDlbrtNo" id="batchDlbrtNo" type="text" disabled="disabled" value="<c:out value='${batchDlbrtManage.batchDlbrtNo}'/>" maxLength = "13" size="20" /></td>
 		</tr>
 		 -->
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />업무심의번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />업무심의번호</th>
 			<td>
 			<label for='jobDlbrtNo' class='disp_none'>업무심의번호</label>
 			<input title="새창" name="jobDlbrtNo" id="jobDlbrtNo" type="text" value="<c:out value='${batchDlbrtManage.jobDlbrtNo}'/>" maxLength="13" size="20" onclick="javascript:fnJobDlbrtClick();" /></td>
 		</tr>
 		<tr>
 			<th>업무심의명 &nbsp;
-			  <img src="/images/egovframework/bopr/search.gif" title="배치 신규등록/삭제 요청시 관련 업무(이미 승인된 건에 한하여)를 지정해야 합니다.
+			  <img src="<c:url value='/images/egovframework/bopr/search.gif' />" title="배치 신규등록/삭제 요청시 관련 업무(이미 승인된 건에 한하여)를 지정해야 합니다.
 			  업무심의번호 입력필드를 클릭하시면 승인된 업무심의 선택 팝업이 호출됩니다.
 			  배치 삭제 요청시에는 관련 업무를 선택한 후 
 			  배치ID 입력 필드를 클릭하여 배포완료된 배치 중 
@@ -276,7 +276,7 @@ $(document).ready(function() {
 			<textarea name="batchDc" id="batchDc" title="배치설명" rows="5" cols="80" ><c:out value="${batchDlbrtManage.batchDc}"/></textarea></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />처리유형</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />처리유형</th>
 			<td>
 			<label for='processSeCode' class='disp_none'>처리유형 선택</label>
 			<select title="처리유형 선택" name="processSeCode" id="processSeCode" onchange="javascript:fnProcessSeChange();">
@@ -298,7 +298,7 @@ $(document).ready(function() {
 		<tbody>
 		<tr>
            <th>설정파일 &nbsp;
-           <img src="/images/egovframework/bopr/search.gif" title="배치 설정 XML 파일을 등록합니다.
+           <img src="<c:url value='/images/egovframework/bopr/search.gif' />" title="배치 설정 XML 파일을 등록합니다.
 반드시 형식에 맞는 파일을 등록해야 하고 
 다른 배치와 Job Id, bean Id 가 중복될 수 없습니다. 
 배포 경로는 공통(사용자관리)>연동서비스관리>FTP연동서비스관리에서 변경할 수 있습니다.
@@ -333,7 +333,7 @@ $(document).ready(function() {
         </tr>
 		<tr>
            <th>첨부파일 &nbsp;
-             <img src="/images/egovframework/bopr/search.gif" title="설정 XML 파일 이외의 배치 관련 파일을 등록합니다.
+             <img src="<c:url value='/images/egovframework/bopr/search.gif' />" title="설정 XML 파일 이외의 배치 관련 파일을 등록합니다.
 class 파일, 파라미터 파일 등 형식에 구애 받지 않고 등록할 수 있습니다.
 배포 경로는 공통(사용자관리)>연동서비스관리>FTP연동서비스관리에서 변경할 수 있습니다.
 파일은 배포경로/상세경로의 위치에 배포됩니다.

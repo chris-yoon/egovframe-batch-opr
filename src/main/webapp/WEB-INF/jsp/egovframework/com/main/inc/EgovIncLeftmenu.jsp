@@ -50,7 +50,7 @@ function fncSelectUser(user) {
 	<ul>
 	<li>
 		<span class="nameLeft">로그인정보 없음</span>
-		<span class="logoutRight"><a href="<c:url value='/uat/uia/egovLoginUsr.do'/>"><img src="/images/egovframework/bopr/new_main/btn_login.gif" alt="로그인" /></a></span>
+		<span class="logoutRight"><a href="<c:url value='/uat/uia/egovLoginUsr.do'/>"><img src="<c:url value='/images/egovframework/bopr/new_main/btn_login.gif' />" alt="로그인" /></a></span>
 	</li>
 	</ul>
 	<%
@@ -61,7 +61,7 @@ function fncSelectUser(user) {
 	<ul>
 	<li>
 		<span class="nameLeft"><a href="#content" onclick="javascript:fncSelectUser('<%=loginVO.getId()%>')"><c:out value="${loginName}"/> 님</a></span>
-		<span class="logoutRight"><a href="<c:url value='/uat/uia/actionLogout.do'/>"><img src="/images/egovframework/bopr/new_main/btn_logout.gif" alt="로그아웃" /></a></span>
+		<span class="logoutRight"><a href="<c:url value='/uat/uia/actionLogout.do'/>"><img src="<c:url value='/images/egovframework/bopr/new_main/btn_logout.gif' />" alt="로그아웃" /></a></span>
 	</li>
 	</ul>
 	<%

@@ -134,11 +134,11 @@ $(document).ready(function() {
 		</colgroup>
 		<tbody>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자ID</th>
 			<td>${userManage.userId}</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용자명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용자명</th>
 			<td>
 				<label for="userNm" class="disp_none">사용자명</label>
 				<input name="userNm" id="userNm" type="text" value="<c:out value='${userManage.userNm}'/>"  size="25" maxlength="20" /></td>
@@ -148,7 +148,7 @@ $(document).ready(function() {
 			<td><span class="bbsBtn"><a href="javascript:fncUserPasswordView()" title="비밀번호 변경 화면으로 이동">비밀번호변경</a></span></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />사용여부</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />사용여부</th>
 			<td>
 				<label for="useAt" class="disp_none">사용여부</label>
 				<form:select path="useAt"  title="사용여부">
@@ -158,7 +158,7 @@ $(document).ready(function() {
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />소속부서</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />소속부서</th>
 			<td>
 				<label for="deptId" class="disp_none">소속부서</label>
 				<form:select path="deptId"  title="소속부서">
@@ -167,7 +167,7 @@ $(document).ready(function() {
 			</td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />전화번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />전화번호</th>
 			<td>
 				<label for="moblphonNo" class="disp_none">전화번호</label>
 				<input name="moblphonNo" id="moblphonNo" type="text" value="<c:out value="${userManage.moblphonNo}"/>" maxLength="20" size="20" /></td>
@@ -179,7 +179,7 @@ $(document).ready(function() {
 				<input name="adres" id="adres" type="text" value="<c:out value="${userManage.adres}"/>" maxLength="50" size="50" /></td>
 		</tr>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="필수입력" />E-mail</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="필수입력" />E-mail</th>
 			<td>
 				<label for="emails" class="disp_none">E-mail</label><input name="emails" id="emails" type="text" value="<c:out value="${userManage.emails}"/>" maxLength="25" size="25" /></td>
 		</tr>

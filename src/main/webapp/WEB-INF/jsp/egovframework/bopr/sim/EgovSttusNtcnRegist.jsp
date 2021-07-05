@@ -231,21 +231,21 @@
                 </colgroup>
                 <tbody>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="배치I.D. 필수입력">배치ID</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="배치I.D. 필수입력">배치ID</th>
                         <td colspan="5">
                             <label for="batchId" class="disp_none">배치I.D.</label>
                             <input type="text" id="batchId" name="batchId" size="40" title="배치ID" readonly="readonly">
                         </td>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="Job이름(배치명) 필수입력">Job이름(배치명)</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="Job이름(배치명) 필수입력">Job이름(배치명)</th>
                         <td colspan="5">
                             <label for="batchNm" class="disp_none">Job이름(배치명)</label>
                             <input type="text" id="batchNm" name="batchNm" size="40" title="Job이름(배치명)" readonly="readonly">
                         </td>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="스케줄번호 필수입력">스케줄번호</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="스케줄번호 필수입력">스케줄번호</th>
                         <td colspan="5">
                             <label for="schdulNo" class="disp_none">스케줄번호</label>
                             <input type="text" id="schdulNo" name="schdulNo" size="40" title="스케줄번호" readonly="readonly">
@@ -255,21 +255,21 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="스케줄명 필수입력">스케줄명</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="스케줄명 필수입력">스케줄명</th>
                         <td colspan="5">
                             <label for="schdulNm" class="disp_none">스케줄명</label>
                             <input type="text" id="schdulNm" name="schdulNm" size="40" title="스케줄명" readonly="readonly">
                         </td>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="알림제목 필수입력">알림제목</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="알림제목 필수입력">알림제목</th>
                         <td colspan="5">
                             <label for="ntcnSj" class="disp_none">알림제목</label>
                             <input type="text" id="ntcnSj" name="ntcnSj" size="40" title="알림제목">
                         </td>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="이벤트 필수입력">이벤트</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="이벤트 필수입력">이벤트</th>
                         <td colspan="5">
                             <label for="eventCode" class="disp_none">이벤트 선택</label>
                             <select name="eventCode" id="eventCode" title="이벤트 선택">
@@ -279,7 +279,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="알림종류 필수입력">알림종류</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="알림종류 필수입력">알림종류</th>
                         <td colspan="5">
                             <label for="SMS" class="disp_none">알림종류 SMS 선택</label>
                             <input type="checkbox" id="SMS" name="ntcnCodes" value="SMS">SMS
@@ -289,7 +289,7 @@
                     </tr>
                     <tr id="recptnRow">
                         <th id="recptnHead">
-                            <img src="/images/egovframework/bopr/blt4.gif" alt="수신자 필수입력">수신자
+                            <img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="수신자 필수입력">수신자
                             <label id="recptnBtn" class="disp_none">수신자 추가 버튼</label>
                             <input type="button" id="recptnBtn" value="추가" onclick="fncSelectRecptnUser()">
                         </th>
@@ -300,7 +300,7 @@
                         <th>삭제</th>
                     </tr>
                     <tr>
-                        <th><img src="/images/egovframework/bopr/blt4.gif" alt="메시지명 필수입력">메시지명</th>
+                        <th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="메시지명 필수입력">메시지명</th>
                         <td colspan="5">
                             <label for="mssageNm" class="disp_none">메시지명</label>
                             <input type="text" id="mssageNm" name="mssageNm" size="60" title="메시지명">

@@ -26,11 +26,11 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
-<c:set var="ImgUrl" value="/images/egovframework/com/sym/mnu/bmm/"/>
-<c:set var="CssUrl" value="/css/egovframework/com/sym/mnu/bmm/"/>
+<c:set var="ImgUrl" value="<c:url value='/images/egovframework/com/sym/mnu/bmm/' />"/>
+<c:set var="CssUrl" value="<c:url value='/css/egovframework/com/sym/mnu/bmm/' />"/>
 <%
-String imagePath_icon   = "/images/egovframework/com/sym/mnu/bmm/icon/";
-String imagePath_button = "/images/egovframework/com/sym/mnu/bmm/button/";
+String imagePath_icon   = "<c:url value='/images/egovframework/com/sym/mnu/bmm/icon/' />";
+String imagePath_button = "<c:url value='/images/egovframework/com/sym/mnu/bmm/button/' />";
 %>
 <html lang="ko">
 

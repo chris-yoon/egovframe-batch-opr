@@ -142,7 +142,7 @@ function fnChecked(){
 		</colgroup>
 		<tbody>
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />리프레쉬주기</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />리프레쉬주기</th>
 			<td>
 				<label for="refreshCycle" class="disp_none">리프레쉬주기</label> 
 				<select name="refreshCycle" id="refreshCycle">
@@ -157,7 +157,7 @@ function fnChecked(){
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />스케줄주기</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />스케줄주기</th>
 			<td> 
 				<label for="executCycle" class="disp_none">스케줄주기</label> 
 				<select name="executCycle" id="executCycle">
@@ -179,7 +179,7 @@ function fnChecked(){
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />목록건수</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />목록건수</th>
 			<td>
 				<label for="listCount" class="disp_none">목록건수</label> 
 				<select name="listCount" id="listCount">
@@ -191,7 +191,7 @@ function fnChecked(){
 		</tr>
 		
 		<tr>
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />배치상태</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />배치상태</th>
 			<td>
 				<label for="batchSttus" class="disp_none">배치상태</label> 
 				<select name="batchSttus" id="batchSttus">

@@ -168,10 +168,10 @@ $(document).ready(function() {
 				    </select>&nbsp;
 				</td>
 				<td>
-					<a href="javascript:fn_egov_refresh();"><img align="top" src="/images/egovframework/bopr/btn_refrash.gif" alt="새로고침" /></a>&nbsp;
+					<a href="javascript:fn_egov_refresh();"><img align="top" src="<c:url value='/images/egovframework/bopr/btn_refrash.gif' />" alt="새로고침" /></a>&nbsp;
 				</td>
 				<td>
-					<a href="javascript:fncUpdateSetupInfo();"><img align="top" src="/images/egovframework/bopr/btn_setting.gif" alt="설정" /></a>
+					<a href="javascript:fncUpdateSetupInfo();"><img align="top" src="<c:url value='/images/egovframework/bopr/btn_setting.gif' />" alt="설정" /></a>
 				</td>
 			</tr>
 			</table>
@@ -181,7 +181,7 @@ $(document).ready(function() {
 			<!-- 오늘의 할일 -->
 			<div class="metoday">
 				<div class="today">
-					<div class="left"><img src="/images/egovframework/bopr/new_main/img_metoday_left.gif" alt=""/></div>
+					<div class="left"><img src="<c:url value='/images/egovframework/bopr/new_main/img_metoday_left.gif' />" alt=""/></div>
 					<div class="center">
 						<h2>
 							<span class="me_tit">오늘의 할일</span>
@@ -201,9 +201,9 @@ $(document).ready(function() {
 								</c:forEach>
 							</ul>
 						</div>
-						<div class="btn_more"><a href='javascript:goLeftMenu("/bopr/bam/EgovJobDlbrtList.do","batchDlbrt","batchDlbrt_1")'><img src="/images/egovframework/bopr/new_main/btn_more.gif" alt="오늘의 할일 더보기" /></a></div>
+						<div class="btn_more"><a href='javascript:goLeftMenu("/bopr/bam/EgovJobDlbrtList.do","batchDlbrt","batchDlbrt_1")'><img src="<c:url value='/images/egovframework/bopr/new_main/btn_more.gif' />" alt="오늘의 할일 더보기" /></a></div>
 					</div>
-					<div class="right"><img src="/images/egovframework/bopr/new_main/img_metoday_right.gif" alt=""/></div>
+					<div class="right"><img src="<c:url value='/images/egovframework/bopr/new_main/img_metoday_right.gif' />" alt=""/></div>
 				</div>
 			</div>
 			<!-- 오늘의 할일 -->
@@ -211,7 +211,7 @@ $(document).ready(function() {
 			<!-- 금일 실행예정 배치목록 -->
 			<div class="todayexe">
 				<div class="exetoday">
-					<div class="left"><img src="/images/egovframework/bopr/new_main/img_todayexe_left.gif" alt=""/></div>
+					<div class="left"><img src="<c:url value='/images/egovframework/bopr/new_main/img_todayexe_left.gif' />" alt=""/></div>
 					<div class="execenter">
 						<h2>
 							<span class="exe_tit">금일 실행예정 배치목록</span>
@@ -232,9 +232,9 @@ $(document).ready(function() {
 									</c:if>
 							</ul>
 						</div>
-						<div class="btn_more"><a href="javascript:fn_goSchdul();"><img src="/images/egovframework/bopr/new_main/btn_more.gif" alt="오늘의 할일 더보기" /></a></div>
+						<div class="btn_more"><a href="javascript:fn_goSchdul();"><img src="<c:url value='/images/egovframework/bopr/new_main/btn_more.gif' />" alt="오늘의 할일 더보기" /></a></div>
 					</div>
-					<div class="right"><img src="/images/egovframework/bopr/new_main/img_todayexe_right.gif" alt=""/></div>
+					<div class="right"><img src="<c:url value='/images/egovframework/bopr/new_main/img_todayexe_right.gif' />" alt=""/></div>
 				</div>
 			</div>
 		<!-- 금일 실행예정 배치목록 end -->

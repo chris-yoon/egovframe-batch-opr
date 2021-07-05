@@ -127,7 +127,7 @@ function fnPassCheck(str){
 		<tbody>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />FTP연동명</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />FTP연동명</th>
 			<td>
 				<label for="ftpIntrlckNm" class="disp_none">FTP연동명</label>
 				<input name="ftpIntrlckNm" id="ftpIntrlckNm" type="text" value="<c:out value='${ftpIntrlManage.ftpIntrlckNm}'/>" maxLength="50" size="50" />
@@ -135,7 +135,7 @@ function fnPassCheck(str){
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />FTP주소</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />FTP주소</th>
 			<td>
 				<label for="ftpAdres" class="disp_none">FTP주소</label>
 				<input name="ftpAdres" id="ftpAdres" type="text" value="<c:out value='${ftpIntrlManage.ftpAdres}'/>" maxLength="20" size="20" />
@@ -144,20 +144,20 @@ function fnPassCheck(str){
 		</tr>
 		 
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />사용자ID</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />사용자ID</th>
 			<td>
 				<label for="userId" class="disp_none">사용자ID</label>
 				<input name="userId" id="userId" type="text" value="<c:out value='${ftpIntrlManage.userId}'/>" maxLength="20" size="20" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />비밀번호</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />비밀번호</th>
 			<td><label for="password" class="disp_none">비밀번호</label>
 				<input name="password" id="password" type="password" maxLength="50" size="50" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />비밀번호 확인</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />비밀번호 확인</th>
 			<td>
 				<label for="password2" class="disp_none">비밀번호 확인</label>
 				<input name="password2" id="password2" type="password" maxLength="50" size="50" /></td>
@@ -165,14 +165,14 @@ function fnPassCheck(str){
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />첨부파일배포경로</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />첨부파일배포경로</th>
 			<td>
 				<label for="batchWdtbPath" class="disp_none">첨부파일배포경로</label>
 				<input name="batchWdtbPath" id="batchWdtbPath" type="text" value="<c:out value='${ftpIntrlManage.batchWdtbPath}'/>" maxLength="100" size="100" /></td>
 		</tr>
 		
 		<tr>  
-			<th><img src="/images/egovframework/bopr/blt4.gif" alt="중요표시" />설정파일배포경로</th>
+			<th><img src="<c:url value='/images/egovframework/bopr/blt4.gif' />" alt="중요표시" />설정파일배포경로</th>
 			<td>
 				<label for="cfgWdtbPath" class="disp_none">설정파일배포경로</label>
 				<input name="cfgWdtbPath" id="cfgWdtbPath" type="text" value="<c:out value='${ftpIntrlManage.cfgWdtbPath}'/>" maxLength="100" size="100" /></td>

@@ -253,7 +253,7 @@ function fncSearchList(){
 				<c:if test="${authorGroupVO.searchKeyword ne ''}">value="<c:out value='${authorGroupVO.searchKeyword}'/>"</c:if>
 				<c:if test="${authorGroupVO.searchKeyword eq ''}">value="검색조건을 선택하세요" disabled="disabled"</c:if>
 			/>
-			<input type="image" class="searchbtn" title="검색" src="/images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSearchList(); return false;"/>
+			<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSearchList(); return false;"/>
 		</fieldset>
 	</div>
 	<!-- //검색영역 -->

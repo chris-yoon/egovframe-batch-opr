@@ -82,26 +82,6 @@ function goRegiUsr() {
 	document.loginForm.action="<c:url value='/main/JoinView.do'/>";
     document.loginForm.submit();
     
-/* 	var useMemberManage = '${useMemberManage}';
-
-	if(useMemberManage != 'true'){
-		alert("사용자 관리 컴포넌트가 설치되어 있지 않습니다. \n관리자에게 문의하세요.");
-		return false;
-	}
-
-    var userSe = document.loginForm.userSe.value;
-    // 일반회원
-    if (userSe == "GNR") {
-        document.loginForm.action="<c:url value='/uss/umt/EgovStplatCnfirmMber.do'/>";
-        document.loginForm.submit();
-    // 기업회원
-    } else if (userSe == "ENT") {
-        document.loginForm.action="<c:url value='/uss/umt/EgovStplatCnfirmEntrprs.do'/>";
-        document.loginForm.submit();
-    // 업무사용자
-    } else if (userSe == "USR") {
-        alert("업무사용자는 별도의 회원가입이 필요하지 않습니다.");
-    } */
 }
 
 function goGpkiIssu() {
@@ -204,98 +184,7 @@ function press() {
 	<input type="hidden" name="userSe"  value="GNR"/>
     <input type="hidden" name="j_username" />
 </form>
-<%-- 
-<img src="<c:url value='/images/egovframework/com/main_top02.jpg'/>" alt="egovframe" />
 
-  <table width="700" >
-    <tr>
-      <td width="350" height="250">
-          <!--일반로그인 테이블 시작-->
-          <form name="loginForm" action ="<c:url value='/uat/uia/actionLogin.do'/>" method="post">
-			<div style="visibility:hidden;display:none;">
-			<input name="iptSubmit1" type="submit" value="전송" title="전송">
-			</div>
-            <input type="hidden" name="message" value="${message}">
-            <table width="303" border="0" cellspacing="8" cellpadding="0">
-              <tr>
-                <td width="40%"class="title_left"><img src="<c:url value='/images/egovframework/com/cmm/icon/tit_icon.gif'/>" width="16" height="16" hspace="3" align="middle" alt="login">&nbsp;일반로그인</td>
-              </tr>
-              <tr>
-                <td width="303" height="210" valign="top" style="background:url(<c:url value='/images/egovframework/com/uat/uia/login_bg01.gif' />) no-repeat;">
-                    <table width="303" border="0" align="center" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td height="70">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>
-                            <table border="0" cellpadding="0" cellspacing="0" style="width:250px;margin-left:20px; background-repeat:no-repeat;">
-                              <tr>
-                                <td height="5"></td>
-                              </tr>
-                              <tr>
-                                <td height="1">&nbsp;</td>
-                              </tr>
-                            </table>
-                            <table border="0" cellpadding="0" cellspacing="0" style="width:250px;margin-left:20px;">
-                              <tr>
-                                <td>
-                                    <table width="250" border="0" cellpadding="0" cellspacing="0">
-                                      <tr>
-                                        <td class="required_text" nowrap><label for="id">아이디&nbsp;&nbsp;</label></td>
-                                        <td><input type="text" name="id" id="id" style="height: 16px; width: 85px; border: 1px solid #CCCCCC; margin: 0px; padding: 0px; ime-mode: disabled;" tabindex="4" maxlength="10"/></td>
-                                        <td/>
-                                      </tr>
-                                      <tr>
-                                        <td class="required_text" nowrap><label for="password">비밀번호&nbsp;&nbsp;</label></td>
-                                        <td><input type="password" name="password" id="password" style="height: 16px; width: 85px; border: 1px solid #CCCCCC; margin: 0px; padding: 0px; ime-mode: disabled;" maxlength="12" tabindex="5" onKeyDown="javascript:if (event.keyCode == 13) { actionLogin(); }"/></td>
-                                        <td class="title"><label for="checkId"><input type="checkbox" name="checkId" class="check2" onClick="javascript:saveid(document.loginForm);" id="checkId" tabindex="6"/>ID저장</label></td>
-                                      </tr>
-                                    </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td height="20">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                    <table border="0" cellspacing="0" cellpadding="0">
-                                      <tr>
-                                        <td><span class="button"><a href="#LINK" onClick="actionLogin()" tabindex="7">로그인</a></span></td>
-                                        <td>&nbsp;</td>
-                                        <td><span class="button"><a href="#LINK" onClick="goRegiUsr();" tabindex="8">회원가입</a></span></td>
-                                        <td>&nbsp;</td>
-                                        <td><span class="button"><a href="#LINK" onClick="goFindId();" tabindex="9">아이디/비밀번호찾기</a></span></td>
-                                      </tr>
-                                    </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td height="3"></td>
-                              </tr>
-                              
-                            </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td height="2">&nbsp;</td>
-                      </tr>
-                    </table>
-                </td>
-              </tr>
-            </table>
-            
-        </form>
-        <!--일반로그인 테이블 끝-->
-      </td>
-    </tr>
-  </table>
-<!-- bottom -->
-    <div id="new_footer_login">
-    	<ul>
-        
-    	</ul>
-    </div>
- --%>
 </body>
 </html>
 

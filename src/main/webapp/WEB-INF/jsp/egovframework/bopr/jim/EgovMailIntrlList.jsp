@@ -162,7 +162,7 @@ function fncChangeCondition(){
 				<c:if test="${mailIntrlManageVO.searchKeyword eq ''}">value="검색조건을 선택하세요" disabled="disabled"</c:if>
 			
 			/>                       
-			<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSelectMailIntrlList('1')"/>
+			<input type="image" class="searchbtn" title="검색" src="../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSelectMailIntrlList('1')"/>
 		</fieldset>
 	</div>
 	<!-- //검색영역 -->

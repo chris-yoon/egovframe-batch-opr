@@ -192,7 +192,7 @@
 				<c:if test="${rehndnVO.searchKeyword ne ''}">value="<c:out value='${rehndnVO.searchKeyword}'/>"</c:if>
 				<c:if test="${rehndnVO.searchKeyword eq '' && rehndnVO.searchCondition eq ''}">value="검색조건을 선택하세요" disabled="disabled"</c:if> 
 			onkeyup="press();return false;" />                       
-			<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSelectRehndnList('1');return false;"/>
+			<input type="image" class="searchbtn" title="검색" src="../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSelectRehndnList('1');return false;"/>
 		</fieldset>
 	</div>
 	<!-- //검색영역 -->

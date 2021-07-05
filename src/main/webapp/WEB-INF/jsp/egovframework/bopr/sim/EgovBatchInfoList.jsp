@@ -265,7 +265,7 @@
                 </select>
                 <label for="txtSearchKeyword" class="disp_none">검색어 입력</label>
                 <input id="txtSearchKeyword" name="txtSearchKeyword" class="inptext" title="검색어 입력란" type="text" value="" maxlength="50" onkeydown="fncSelectByEnter()">
-                <input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="fncSelectNewList()">
+                <input type="image" class="searchbtn" title="검색" src="../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="fncSelectNewList()">
             </fieldset>
         </div>
         <!-- 검색영역 End -->

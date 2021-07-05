@@ -44,25 +44,5 @@
 <!-- 화면상단 Header (EgovIncHeader.jsp) START -->
 <h1><a href="<c:url value='/main/Main.do'/>"><img src="<c:url value='/images/egovframework/bopr/logo.jpg' />" alt="egovFrame 전자정부 배치운영환경" /></a></h1>
 <div class="topInfo">
-	<%-- <%
- 	LoginVO loginVO = (LoginVO)session.getAttribute("loginVO");
- 	String leftMenu = (String)session.getAttribute("leftMenu");
-
-	if(loginVO == null){
-	%>
-
-	   	<span class="name">로그인정보가 없습니다. 로그인후 사용하십시오</span>
-		<span><a href="<c:url value='/uat/uia/egovLoginUsr.do'/>"><img src="<c:url value='/'/>/images/egovframework/bopr/new_main/btn_login.gif" alt="로그인" /></a></span>
-
-	<%
-	}else{
- 	%>
- 		<c:set var="loginName" value="<%= loginVO.getName()%>"/>
-
- 		<span class="name"><c:out value="${loginName}"/> 님</span>
-		<span><a href="<c:url value='/uat/uia/actionLogout.do'/>"><img src="<c:url value='/images/egovframework/bopr/new_main/btn_logout.gif" alt="로그아웃" /></a></span>
- 	<%
- 	}
-	%> --%>
 </div>
 <!-- 화면상단 Header (EgovIncHeader.jsp) END -->

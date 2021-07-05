@@ -101,7 +101,7 @@ function fnCheck(str){
 	    <input type="hidden" name="usedCnt" value="<c:out value="${usedCnt}"/>" />
 	    <label for="checkCode" class="disp_none">중복확인할 코드</label>
 		<input type="text" name="checkCode" value="<c:out value="${checkCode}"/>" maxlength="20" tabindex="1" title="코드입력"/>                       
-		<input type="image" class="searchbtn" title="조회" src="../../../images/egovframework/bopr/btn_search.gif" alt="<spring:message code='button.inquire' />" onclick="javascript:fncheckCode();"/>
+		<input type="image" class="searchbtn" title="조회" src="../../../../images/egovframework/bopr/btn_search.gif" alt="<spring:message code='button.inquire' />" onclick="javascript:fncheckCode();"/>
 	</fieldset>
 	</div>
 	

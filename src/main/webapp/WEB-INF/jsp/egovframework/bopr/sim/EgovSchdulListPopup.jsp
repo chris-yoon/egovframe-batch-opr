@@ -216,7 +216,7 @@
                 <a href="#LINK" onClick="fn_egov_NormalCalendar(parameter,'', parameter.txtExecutSchdulDe);">
                     <img name="calendarImg" src="<c:url value='/images/egovframework/com/cmm/icon/bu_icon_carlendar.gif' />"  align="middle" style="border:0px" alt="실행일자 달력 팝업, 새창열림">
                 </a>
-                <input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="fncSelectNewList()">
+                <input type="image" class="searchbtn" title="검색" src="../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="fncSelectNewList()">
             </fieldset>
         </div>
         <!-- 검색영역 End -->

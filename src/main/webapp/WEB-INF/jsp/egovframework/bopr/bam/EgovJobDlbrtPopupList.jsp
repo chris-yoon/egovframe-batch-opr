@@ -115,7 +115,7 @@ function fncOnLoad(){
 				<c:if test="${jobDlbrtVO.searchKeyword ne ''}">value="<c:out value='${jobDlbrtVO.searchKeyword}'/>"</c:if>
 				<c:if test="${jobDlbrtVO.searchKeyword eq '' && jobDlbrtVO.searchCondition eq ''}">value="검색조건을 선택하세요" disabled="disabled"</c:if> 
 			onkeyup="press();return false;" />                       
-			<input type="image" class="searchbtn" title="검색" src="../../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSelectJobDlbrtList('1');return false;"/>
+			<input type="image" class="searchbtn" title="검색" src="../../images/egovframework/bopr/btn_search.gif" alt="검색" onclick="javascript:fncSelectJobDlbrtList('1');return false;"/>
 		</fieldset>
 	</div>
 

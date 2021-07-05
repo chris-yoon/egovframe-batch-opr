@@ -15,6 +15,10 @@
     <security:http pattern="/WEB-INF/config/tiles2def/def/**" security="none"/>
     <security:http pattern="\A/WEB-INF/jsp/.*\Z" request-matcher="regex" security="none"/>
 
+    <bean id="egovStrictHttpFirewall" class="org.springframework.security.web.firewall.StrictHttpFirewall">
+        <property name="allowSemicolon" value="true"/>
+    </bean>
+    
     <egov-security:config id="securityConfig"
         loginUrl="/uat/uia/egovLoginUsr.do"
         logoutSuccessUrl="/main/Main.do"

@@ -230,3 +230,34 @@ public class EgovWebServletContextListener implements ServletContextListener {
         <param-value>mysql, security</param-value>
     </context-param>
 ```
+
+### 3-2. jsessionid의 구분자 ";" 기호에 의한 충돌
+
+#### 분석 및 검토
+- 처음 접속시 쿠키를 사용하지 않도록 설정된 브라우저를 위해 jsessionid= 를 붙여서 URL이 생성되며, Spring Security 의 방화벽 기능에 의해 차단처리됨
+
+```
+http://localhost:8400/egovframework-all-in-one/EgovTop.do;jsessionid=DAA129618850BE8318697F185ABDB649
+```
+
+#### 해결 방법 #1
+- 수정전 : <c:url value="a.gif"/>
+- 수정후 : <img src='c:out value="${pageContext.request.contextPath}"/>'/a.gif"/>
+- "${pageContext.request.contextPath}" => EL 표현식을 사용하여 jsessionid가 붙지 않도록 조치 가능
+
+#### 해결 방법 #2
+- web.xml에 다음 property를 추가한다. Tomcat 6.0.30 이상부터 설정가능하다
+
+```
+<session-config>
+	<tracking-mode>COOKIE</tracking-mode>
+<session-config>
+```
+
+- 수정전 : <c:url value="a.gif"/>
+
+- 
+
+
+
+

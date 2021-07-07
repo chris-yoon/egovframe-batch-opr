@@ -119,6 +119,7 @@ ftp 서버가 구동되어 있으면 다음 화면에서 job 배포경로를 지
 ### 3-1. 로그인페이지로 이동 시 발생하는 NullPointerException
 
 #### 분석 및 검토
+
 - 표준프레임워크 포털 Q&A 에 문의하였었던 내용과 동일하다
   https://www.egovframe.go.kr/home/qainfo/qainfoRead.do?menuNo=69&qaId=QA_00000000000017320
 - context-egovuserdetailshelper.xml 에서 여러 beans 에서 참조하는 egovUserDetailsService 인스턴스가 null 인 것으로 판단된다.
@@ -189,7 +190,7 @@ Globals.Auth = security
 ```
 public class EgovWebServletContextListener implements ServletContextListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(EgovWebServletContextListener.class);
-    
+
     public EgovWebServletContextListener(){
     	setEgovProfileSetting();
     }
@@ -204,8 +205,8 @@ public class EgovWebServletContextListener implements ServletContextListener {
     	if(System.getProperty("spring.profiles.active") != null){
     		System.setProperty("spring.profiles.active", null);
     	}
-    } 
-    
+    }
+
     public void setEgovProfileSetting(){
         try {
             LOGGER.debug("===========================Start EgovServletContextLoad START ===========");
@@ -234,6 +235,7 @@ public class EgovWebServletContextListener implements ServletContextListener {
 ### 3-2. jsessionid의 구분자 ";" 기호에 의한 충돌
 
 #### 분석 및 검토
+
 - 처음 접속시 쿠키를 사용하지 않도록 설정된 브라우저를 위해 jsessionid= 를 붙여서 URL이 생성되며, Spring Security 의 방화벽 기능에 의해 차단처리됨
 
 ```
@@ -241,11 +243,13 @@ http://localhost:8400/egovframework-all-in-one/EgovTop.do;jsessionid=DAA12961885
 ```
 
 #### 해결 방법 #1
+
 - 수정전 : <c:url value="a.gif"/>
-- 수정후 : <img src='c:out value="${pageContext.request.contextPath}"/>'/a.gif"/>
+- 수정후 : <img src="<c:out value='${pageContext.request.contextPath}'/>/a.gif"/>
 - "${pageContext.request.contextPath}" => EL 표현식을 사용하여 jsessionid가 붙지 않도록 조치 가능
 
 #### 해결 방법 #2
+
 - web.xml에 다음 property를 추가한다. Tomcat 6.0.30 이상부터 설정가능하다
 
 ```
@@ -254,10 +258,13 @@ http://localhost:8400/egovframework-all-in-one/EgovTop.do;jsessionid=DAA12961885
 <session-config>
 ```
 
-- 수정전 : <c:url value="a.gif"/>
+#### 해결 방법 #3
 
-- 
+- Spring Security 방화벽에 세미콜론을 허용하도록 설정
 
-
-
-
+```
+    <bean id="egovStrictHttpFirewall" class="org.springframework.security.web.firewall.StrictHttpFirewall">
+        <property name="allowSemicolon" value="true"/>
+    </bean>
+    <security:http-firewall ref="egovStrictHttpFirewall"/>
+```

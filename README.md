@@ -255,7 +255,7 @@ http://localhost:8400/egovframework-all-in-one/EgovTop.do;jsessionid=DAA12961885
 ```
 <session-config>
 	<tracking-mode>COOKIE</tracking-mode>
-<session-config>
+</session-config>
 ```
 
 #### 해결 방법 #3
